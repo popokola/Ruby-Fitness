@@ -1,0 +1,32 @@
+<%= stylesheet_link_tag 'application', media: 'all' %>
+<%= stylesheet_link_tag 'forms', media: 'all' %>
+<%= stylesheet_link_tag 'user', media: 'all' %>
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400italic,300,300italic%7CEl+Messiri:400,400italic%7CLato:400,400italic" rel="stylesheet" type="text/css" />
+
+<main>
+
+    <div id="contact">
+        <h1 class="title style1">Login page</h1>
+
+        <form method="GET" id="contact_form" action="http://localhost:3000/">
+            <div class="form-group">
+                <label class="input">
+                    <input class="input__field" type="text" name="contact_name" id="contact_name" placeholder=" " maxlength="20"/>
+                    <span class="input__label">Email</span>
+                </label>
+
+                <label class="input">
+                    <input class="input__field" type="password" name="contact_name" id="contact_name" placeholder=" " maxlength="20"/>
+                    <span class="input__label">Password</span>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" name="submit" id="submit" value="Send message" />
+                <input type="reset" name="reset" id="reset" value="Reset fields" />
+            </div>
+        </form>
+
+    </div>
+
+</main>

@@ -1,0 +1,125 @@
+  [1m[35m (2830.7ms)[0m  [1m[35mCREATE DATABASE "Rails_project_development" ENCODING = 'unicode'[0m
+  [1m[35m (2932.4ms)[0m  [1m[35mCREATE DATABASE "Rails_project_test" ENCODING = 'unicode'[0m
+  [1m[35m (149.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (44.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7167210355910372565)[0m
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (7.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-06-26 14:33:26.400239"], ["updated_at", "2022-06-26 14:33:26.400239"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(7167210355910372565)[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/home" for 192.168.192.1 at 2022-06-26 14:33:38 +0000
+Started GET "/" for 192.168.192.1 at 2022-06-26 14:33:38 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/" for 192.168.192.1 at 2022-06-26 14:33:54 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 192.168.192.1 at 2022-06-26 14:33:57 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 192.168.192.1 at 2022-06-26 14:34:32 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 192.168.208.1 at 2022-06-26 14:40:35 +0000
+Cannot render console from 192.168.208.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-6.1.4.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.1.4.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 21.4ms | Allocations: 510)
+Completed 200 OK in 167ms (Views: 66.3ms | ActiveRecord: 0.0ms | Allocations: 6770)
+
+
+Started GET "/home" for 192.168.208.1 at 2022-06-26 14:41:04 +0000
+Cannot render console from 192.168.208.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/" for 192.168.208.1 at 2022-06-26 14:41:06 +0000
+Cannot render console from 192.168.208.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-6.1.4.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.1.4.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.9ms | Allocations: 217)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 949)
+
+
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE DATABASE "Rails_project_development" ENCODING = 'unicode'[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE DATABASE "Rails_project_test" ENCODING = 'unicode'[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7167210355910372565)[0m
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(7167210355910372565)[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 192.168.208.1 at 2022-06-26 14:41:59 +0000
+Cannot render console from 192.168.208.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-6.1.4.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.1.4.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 44)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 3031)
+
+
+Started GET "/" for 192.168.208.1 at 2022-06-26 14:48:45 +0000
+Cannot render console from 192.168.208.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-6.1.4.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.1.4.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.7ms | Allocations: 219)
+Completed 200 OK in 16ms (Views: 13.0ms | Allocations: 3569)
+
+
+Started GET "/home" for 192.168.208.1 at 2022-06-26 14:48:49 +0000
+Cannot render console from 192.168.208.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/home" for 192.168.208.1 at 2022-06-26 14:50:30 +0000
+Cannot render console from 192.168.208.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 999.5ms | Allocations: 25389)
+  Rendered layout layouts/application.html.erb (Duration: 1008.3ms | Allocations: 25723)
+Completed 200 OK in 1039ms (Views: 1035.4ms | Allocations: 29539)
+
+
+Started GET "/contact" for 192.168.208.1 at 2022-06-26 14:50:36 +0000
+Cannot render console from 192.168.208.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ContactController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (Duration: 352.1ms | Allocations: 11376)
+  Rendered layout layouts/application.html.erb (Duration: 355.6ms | Allocations: 11530)
+Completed 200 OK in 364ms (Views: 361.9ms | Allocations: 12546)
+
+
+Started GET "/?contact_name=dsaf&contact_name=dsf&contact_name=dsaf&submit=Send+message" for 192.168.208.1 at 2022-06-26 14:50:43 +0000
+Cannot render console from 192.168.208.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"contact_name"=>"dsaf", "submit"=>"Send message"}
+  Rendering /usr/local/bundle/gems/railties-6.1.4.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.1.4.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 43)
+Completed 200 OK in 5ms (Views: 3.5ms | Allocations: 455)
+
+
+Started GET "/contact" for 192.168.208.1 at 2022-06-26 14:50:46 +0000
+Cannot render console from 192.168.208.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ContactController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (Duration: 55.5ms | Allocations: 2246)
+  Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 2386)
+Completed 200 OK in 64ms (Views: 63.2ms | Allocations: 2826)
+
+
+Started GET "/home" for 192.168.208.1 at 2022-06-26 14:50:48 +0000
+Cannot render console from 192.168.208.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 28.2ms | Allocations: 1129)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 1269)
+Completed 200 OK in 37ms (Views: 35.5ms | Allocations: 1708)
+
+
