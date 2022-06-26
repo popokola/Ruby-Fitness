@@ -1,0 +1,37 @@
+<%= stylesheet_link_tag 'application', media: 'all' %>
+<%= stylesheet_link_tag 'forms', media: 'all' %>
+<%= stylesheet_link_tag 'user', media: 'all' %>
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400italic,300,300italic%7CEl+Messiri:400,400italic%7CLato:400,400italic" rel="stylesheet" type="text/css" />
+
+<main>
+    <div id="contact">
+        <h1 class="title style1">Create a account</h1>
+
+        <%= form_with(model: @user, local: true) do |f|%>
+            <div class="form-group">
+                <div class="form-group">
+                    <%= f.label :name %></br>
+                    <%= f.text_field :name, class: "form-control" %>
+                </div>
+                <div class="form-group">
+                    <%= f.label :email %></br>
+                    <%= f.email_field :email, class: "form-control" %>
+                </div>
+                <div class="form-group">
+                    <%= f.label :password %></br>
+                    <%= f.password_field :password, class: "form-control" %>
+                </div>
+
+                <div class="form-group">
+                    <%= f.submit %></br>
+                </div>
+            
+            </div>
+
+           
+        <%end%>    
+    
+
+    </div>
+
+</main>

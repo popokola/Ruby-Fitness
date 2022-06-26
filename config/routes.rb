@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get "home", to: "home#index"
+  root "home#index"
+  #get "home", to: "home#index"
   get "contact", to: "contact#index"
   get "users", to: "users#index"
 
+  get "signup", to: "users#new"
+  get "login", to: "sessions#new"
+  post "login", to: "sessions#create"
+  get "logout", to: "sessions#destroy"
+  delete "logout", to: "sessions#destroy"
+  resources :users, except: [:new]
 
   namespace :admin do
     resources :posts
@@ -11,4 +18,5 @@ Rails.application.routes.draw do
     root to: "posts#index"
   end
   resources :posts
+  
 end
