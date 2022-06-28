@@ -9,6 +9,7 @@
 
         <%= form_with(scope: :session, url: login_path) do |f|%>
             <div class="form-group">
+
                 <div class="form-group">
                     <%= f.label :email %></br>
                     <%= f.email_field :email, class: "form-control" %>
@@ -23,11 +24,7 @@
                 </div>
             
             </div>
-
-           
         <%end%>    
     
-
     </div>
-
 </main>
