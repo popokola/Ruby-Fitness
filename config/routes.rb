@@ -10,13 +10,5 @@ Rails.application.routes.draw do
   post "login", to: "sessions#create"
   get "logout", to: "sessions#destroy"
   delete "logout", to: "sessions#destroy"
-  resources :users, except: [:new]
-
-  namespace :admin do
-    resources :posts
-
-    root to: "posts#index"
-  end
-  resources :posts
-  
+  resources :users, except: [:new]  
 end
