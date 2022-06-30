@@ -1,4 +1,3 @@
-module Admin
 class FormsController < ApplicationController
     def index
     end
@@ -21,5 +20,4 @@ class FormsController < ApplicationController
     def form_params
         params.require(:form).permit(:height, :weight, :activity)
     end
-end
 end

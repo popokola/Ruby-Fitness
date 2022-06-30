@@ -21,5 +21,5 @@ class FormsController < Admin::ApplicationController
     def form_params
         params.require(:form).permit(:height, :weight, :activity)
     end
-    end
 end
+
