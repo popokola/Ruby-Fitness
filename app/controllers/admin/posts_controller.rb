@@ -1,6 +1,6 @@
 module Admin
     class PostsController < Admin::ApplicationController
-        if logged_in ?: 
+        if logged_in ?
             def index
             end
         end
