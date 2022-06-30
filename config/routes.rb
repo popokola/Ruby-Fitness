@@ -18,5 +18,12 @@ Rails.application.routes.draw do
 
     root to: "posts#index"
   end
+
+  # Create the namespace for the admin area
+  # namespace :admin do
+  #   resources :users
+  #   root to: "users#index"
+  # end
+
   
 end
