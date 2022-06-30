@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   delete "logout", to: "sessions#destroy"
   resources :users, except: [:new]
   
+  get "forms", to: "forms#new"
+  post "forms", to: "forms#create"
 
   namespace :admin do
     get "forms", to: "forms#new"
