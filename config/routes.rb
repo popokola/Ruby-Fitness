@@ -13,15 +13,12 @@ Rails.application.routes.draw do
   delete "logout", to: "sessions#destroy"
   resources :users, except: [:new]
   
-  if logged_in?
+
+  namespace :admin do
     get "forms", to: "forms#new"
     post "forms", to: "forms#create"
+    resources :posts 
   end
-  # namespace :admin do
-  #   resources :posts
-
-  #   root to: "posts#index"
-  # end
 
   # Create the namespace for the admin area
   # namespace :admin do
