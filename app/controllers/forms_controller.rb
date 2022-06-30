@@ -22,3 +22,4 @@ class FormsController < ApplicationController
         params.require(:form).permit(:height, :weight, :activity)
     end
 end
+end
