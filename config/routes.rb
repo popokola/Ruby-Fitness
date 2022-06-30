@@ -3,9 +3,10 @@ Rails.application.routes.draw do
   root "home#index"
   #get "home", to: "home#index"
   get "contact", to: "contact#index"
-  get "users", to: "users#index"
 
+  get "users", to: "users#index"
   get "signup", to: "users#new"
+  
   get "login", to: "sessions#new"
   post "login", to: "sessions#create"
   get "logout", to: "sessions#destroy"
@@ -17,6 +18,5 @@ Rails.application.routes.draw do
 
     root to: "posts#index"
   end
-  resources :posts
   
 end

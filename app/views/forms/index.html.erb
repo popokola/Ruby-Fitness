@@ -1,0 +1,204 @@
+<%= stylesheet_link_tag 'home', media: 'all' %>
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400italic,300,300italic%7CEl+Messiri:400,400italic%7CLato:400,400italic" rel="stylesheet" type="text/css" />
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" display="none" width="0" height="0">
+    <symbol id="icon-90a" viewBox="0 0 40 40">
+        <path d="M37.3,15.3v15.3c0,0.8-0.3,1.6-0.9,2.2c-0.6,0.6-1.4,0.9-2.2,0.9H5.8c-0.8,0-1.6-0.3-2.2-0.9s-0.9-1.4-0.9-2.2V15.3 c0.5,0.6,1.2,1.1,2,1.7c4.7,3.1,7.9,5.4,9.6,6.7c0.7,0.5,1.4,0.9,1.8,1.2c0.4,0.3,1,0.6,1.9,0.9c0.7,0.3,1.5,0.5,2.1,0.5l0,0 c0.6,0,1.4-0.2,2.1-0.5c0.7-0.3,1.4-0.6,1.9-0.9c0.4-0.3,1-0.7,1.8-1.2c2.2-1.6,5.4-3.8,9.6-6.7C36.1,16.5,36.7,15.9,37.3,15.3 L37.3,15.3z M37.3,9.6c0,1-0.3,2-0.9,2.9c-0.6,0.9-1.5,1.8-2.4,2.4c-4.9,3.3-7.9,5.4-9,6.2c-0.1,0.1-0.4,0.3-0.8,0.6 c-0.4,0.3-0.7,0.5-1,0.7c-0.3,0.2-0.6,0.4-1,0.6c-0.4,0.2-0.7,0.4-1.1,0.5c-0.4,0.1-0.6,0.2-0.9,0.2l0,0c-0.3,0-0.6-0.1-0.9-0.2 c-0.3-0.1-0.7-0.3-1.1-0.5c-0.4-0.2-0.7-0.4-1-0.6c-0.3-0.2-0.6-0.4-1-0.7c-0.4-0.3-0.7-0.5-0.8-0.6c-1.1-0.8-2.8-2-5.1-3.5 c-2.3-1.6-3.3-2.4-3.7-2.7c-0.8-0.5-1.6-1.2-2.3-2.2s-1-1.9-1-2.6c0-1,0.3-1.9,0.8-2.5c0.5-0.6,1.2-1,2.3-1h28.4 c0.8,0,1.6,0.3,2.2,0.9C37.1,8.1,37.3,8.8,37.3,9.6L37.3,9.6z" /> 
+    </symbol>
+    <symbol id="icon-a37" viewBox="0 0 40 40">
+        <path d="M34.1,19.9c0,0.3-0.1,0.3-0.1,0.4L21.3,33.1c-0.1,0.1-0.1,0.1-0.4,0.1c-0.3,0-0.3-0.1-0.4-0.1L19,31.6 c-0.1-0.1-0.1-0.1-0.1-0.4s0.1-0.3,0.1-0.4l9.2-9.2H5.8c-0.1,0-0.2,0-0.2,0c0,0,0,0,0,0c-0.1-0.1-0.1-0.2-0.1-0.4v-2.5 c0-0.2,0.1-0.4,0.1-0.5c0,0,0.1,0,0.2,0h22.4L19,9c-0.1-0.1-0.1-0.1-0.1-0.4c0-0.3,0.1-0.3,0.1-0.4l1.5-1.5c0.1-0.1,0.1-0.1,0.4-0.1 c0.3,0,0.3,0.1,0.4,0.1L34,19.5C34,19.6,34.1,19.6,34.1,19.9z" />
+    </symbol>
+    <symbol id="icon-910" viewBox="0 0 40 40">
+        <path d="M20,7c4.2,0,4.7,0,6.3,0.1c1.5,0.1,2.3,0.3,3,0.5C30,8,30.5,8.3,31.1,8.9c0.5,0.5,0.9,1.1,1.2,1.8c0.2,0.5,0.5,1.4,0.5,3 C33,15.3,33,15.8,33,20s0,4.7-0.1,6.3c-0.1,1.5-0.3,2.3-0.5,3c-0.3,0.7-0.6,1.2-1.2,1.8c-0.5,0.5-1.1,0.9-1.8,1.2 c-0.5,0.2-1.4,0.5-3,0.5C24.7,33,24.2,33,20,33s-4.7,0-6.3-0.1c-1.5-0.1-2.3-0.3-3-0.5C10,32,9.5,31.7,8.9,31.1 C8.4,30.6,8,30,7.7,29.3c-0.2-0.5-0.5-1.4-0.5-3C7,24.7,7,24.2,7,20s0-4.7,0.1-6.3c0.1-1.5,0.3-2.3,0.5-3C8,10,8.3,9.5,8.9,8.9 C9.4,8.4,10,8,10.7,7.7c0.5-0.2,1.4-0.5,3-0.5C15.3,7.1,15.8,7,20,7z M20,4.3c-4.3,0-4.8,0-6.5,0.1c-1.6,0-2.8,0.3-3.8,0.7 C8.7,5.5,7.8,6,6.9,6.9C6,7.8,5.5,8.7,5.1,9.7c-0.4,1-0.6,2.1-0.7,3.8c-0.1,1.7-0.1,2.2-0.1,6.5s0,4.8,0.1,6.5 c0,1.6,0.3,2.8,0.7,3.8c0.4,1,0.9,1.9,1.8,2.8c0.9,0.9,1.7,1.4,2.8,1.8c1,0.4,2.1,0.6,3.8,0.7c1.6,0.1,2.2,0.1,6.5,0.1 s4.8,0,6.5-0.1c1.6-0.1,2.9-0.3,3.8-0.7c1-0.4,1.9-0.9,2.8-1.8c0.9-0.9,1.4-1.7,1.8-2.8c0.4-1,0.6-2.1,0.7-3.8 c0.1-1.6,0.1-2.2,0.1-6.5s0-4.8-0.1-6.5c-0.1-1.6-0.3-2.9-0.7-3.8c-0.4-1-0.9-1.9-1.8-2.8c-0.9-0.9-1.7-1.4-2.8-1.8 c-1-0.4-2.1-0.6-3.8-0.7C24.8,4.3,24.3,4.3,20,4.3L20,4.3L20,4.3z" />
+        <path d="M20,11.9c-4.5,0-8.1,3.7-8.1,8.1s3.7,8.1,8.1,8.1s8.1-3.7,8.1-8.1S24.5,11.9,20,11.9z M20,25.2c-2.9,0-5.2-2.3-5.2-5.2 s2.3-5.2,5.2-5.2s5.2,2.3,5.2,5.2S22.9,25.2,20,25.2z" />
+        <path d="M30.6,11.6c0,1-0.8,1.9-1.9,1.9c-1,0-1.9-0.8-1.9-1.9s0.8-1.9,1.9-1.9C29.8,9.7,30.6,10.5,30.6,11.6z" />
+    </symbol>
+    <symbol id="icon-935" viewBox="0 0 40 40">
+        <path
+            d="M22.6,20c0,6.3-5.1,11.4-11.3,11.4S0,26.3,0,20S5.1,8.6,11.3,8.6S22.6,13.7,22.6,20 M34.9,20c0,5.9-2.5,10.7-5.6,10.7 c-3.1,0-5.6-4.8-5.6-10.7s2.5-10.7,5.6-10.7C32.4,9.3,34.9,14.1,34.9,20 M40,20c0,5.3-0.9,9.6-2,9.6s-2-4.3-2-9.6s0.9-9.6,2-9.6 S40,14.7,40,20" />
+    </symbol>
+    <symbol id="icon-905" viewBox="0 0 40 40">
+        <path d="M36.3,10.2c-1,1.3-2.1,2.5-3.4,3.5c0,0.2,0,0.4,0,1c0,1.7-0.2,3.6-0.9,5.3c-0.6,1.7-1.2,3.5-2.4,5.1 c-1.1,1.5-2.3,3.1-3.7,4.3c-1.4,1.2-3.3,2.3-5.3,3c-2.1,0.8-4.2,1.2-6.6,1.2c-3.6,0-7-1-10.2-3c0.4,0,1.1,0.1,1.5,0.1 c3.1,0,5.9-1,8.2-2.9c-1.4,0-2.7-0.4-3.8-1.3c-1.2-1-1.9-2-2.2-3.3c0.4,0.1,1,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-1.4-0.3-2.7-1.1-3.7-2.3s-1.4-2.6-1.4-4.2v-0.1c1,0.6,2,0.9,3,0.9c-1-0.6-1.5-1.3-2.2-2.4c-0.6-1-0.9-2.1-0.9-3.3s0.3-2.3,1-3.4 c1.5,2.1,3.6,3.6,6,4.9s4.9,2,7.6,2.1c-0.1-0.6-0.1-1.1-0.1-1.4c0-1.8,0.8-3.5,2-4.7c1.2-1.2,2.9-2,4.7-2c2,0,3.6,0.8,4.8,2.1 c1.4-0.3,2.9-0.9,4.2-1.5c-0.4,1.5-1.4,2.7-2.9,3.6C33.8,11.2,35.1,10.9,36.3,10.2L36.3,10.2z" />
+    </symbol>
+</svg>
+
+<div id="wrapper">
+    <div id="main">
+        <div class="inner">
+            <section id="home-section">
+                <div id="container16" class="container columns full">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div>
+                                <% if logged_in? %>
+                                    <h3> <%=current_user.name %> </h3>
+                                <% end %>
+                                <h3 id="text02" class="style4">Your fitness companion <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309 92" height="92" width="309" style="position: relative; top: 34px; width: 96px; height: 92px; scale(0.621197); z-index: 0; cursor: pointer;"><defs id="SvgjsDefs1036"/><g id="SvgjsG1037" featurekey="symbolFeature-0" transform="matrix(1.5,0,0,1.5,15.40092420578003,17)" fill="#3f72af"><g xmlns="http://www.w3.org/2000/svg"><path d="M48.933773,43.25c0.0099487,0.9299927-0.4000244,1.8099976-1.1300049,2.4100342   c-1.3000488,1.0599976-4.2700195,2.8999634-9.0800171,2.6199951c-0.210022,0-0.3400269,0.0100098-0.4500122,0.0599976   C36.9237633,48.8400269,33.3337364,50,29.103756,50c-2,0-3.8900146-0.2699585-5.6199951-0.789978   c-0.2600098-0.0800171-0.5100098-0.1900024-0.7600098-0.3499756c-0.5200195-0.3200073-2.4299927-1.3800049-5.25-1.3800049   c-0.6500244,0-1.3200073,0.0599976-1.9799805,0.1699829c-0.0599976,0.0100098-0.5200195,0.0599976-1.2300415,0.0599976   c-2.6900024,0-9.1399536-0.75-10.8800049-7.710022c-0.0299683-0.0999756-1.0799561-3.6799927,0.8099978-6.8999634   C5.4637413,30.9400024,7.7137413,29.5,10.8737755,28.8099976c0,0,1.0199585-0.3099976,2.5999756-0.3099976   c2.1799927,0,5.4199829,0.5900269,8.460022,3.3900146c0.2799683,0.2600098,0.6900024,0.3599854,1.039978,0.25   c0.75-0.2299805,1.9500122-0.5100098,3.3599854-0.5100098c2.1799927,0,4.2299805,0.6300049,6.0900269,1.8699951   c0.0199585,0.0100098,0.0899658,0,0.0999756-0.0599976l0.7299805-10.2600098c0.0200195-0.1499634,0-0.289978-0.0499878-0.4299927   l-2.9799805-6.1900024c-0.0200195-0.0499878-0.039978-0.0999756-0.0599976-0.1599731   c-0.0599976-0.2000122-0.2800293-0.5999756-0.4700317-0.5999756c-0.039978,0-0.1799927,0.0099487-0.4099731,0.1499634   c-0.2800293,0.1699829-0.7200317,0.4100342-1.25,0.4799805c-0.2200317,0.0300293-0.4799805,0.0600586-0.789978,0.0600586   c-0.9200439,0-1.9200439-0.2000122-2.9700317-0.5900269c-0.0800171-0.0300293-0.1499634-0.0499878-0.2000122-0.0599976   c-0.0899658-0.0100098-0.2099609-0.039978-0.3499756-0.0700073c-0.4799805-0.0999756-1.2000122-0.2000122-1.5300293,0   c-0.7699585,0.4500122-1.7099609,0.6799927-2.7699585,0.6799927c-0.7700195,0-1.5700073-0.1300049-2.2700195-0.3399658   c-0.7000122-0.2200317-1.2999878-0.5200195-1.6699829-0.8800049c-0.5100098-0.4800415-0.7000122-1.1400146-0.5599976-1.8699951   c0.1900024-1.0100098,0.9899902-2.0100098,1.8899536-2.3800049c0.3000488-0.1199951,0.6600342-0.2700195,1.0400391-0.4200439   C16.683773,9.5,15.5137291,7.9700317,16.4237633,6.6199951c0.0700073-0.1099854,0.1699829-0.2099609,0.2799683-0.2799683   C16.7137413,6.3300171,18.1937218,5.3500366,19.1337242,3.75C19.5437584,3.0900269,20.683773,2,22.4437218,2   c0.6800537,0,1.3900146,0.1600342,2.1199951,0.4800415c1.0600586,0.2600098,7.2000122,1.8399658,9.4200439,3.9699707   c0.7999878,0.8599854,3.2099609,3.6000366,3.3800049,5.3599854c0.7399902,2.3800049,2.2399902,6.3900146,3.2299805,7.4100342   c0.1500244,0.1499634,0.2700195,0.289978,0.3800049,0.4599609c1.1799927,1.8100586,5.0599976,7.9200439,5.5999756,10.9400024   C46.8337364,31.4299927,48.853756,37.7000122,48.933773,43.25z"/></g></g><g id="SvgjsG1038" featurekey="nameFeature-0" transform="matrix(0.6129583602465976,0,0,0.6129583602465976,107.24896217917097,20.99516945489019)" fill="#3f72af"><path d="M28.571 15.713999999999999 l0 10 l-4.2857 4.2857 l4.2857 6.5714 l0 3.4286 l-6.8571 0 l-5.9429 -9.7143 l-5.4857 0 l0 9.7143 l-7.4286 0 l0 -28.571 l21.429 0 z M21.143 24 l0 -6.2857 l-10.857 0 l0 6.2857 l10.857 0 z M34.285671428571426 35.7143 l0 -24.286 l7.4286 0 l0 22.286 l10.286 0 l0 -22.286 l7.4286 0 l0 24.286 l-4.2857 4.2857 l-16.571 0 z M90.85671428571429 15.713999999999999 l0 6.9714 l-3.0286 3.0286 l3.0286 3.0286 l0 6.9714 l-4.2857 4.2857 l-21.429 0 l0 -28.571 l21.429 0 z M83.42871428571428 22.571 l0 -4.8571 l-10.857 0 l0 4.8571 l10.857 0 z M83.42871428571428 33.7143 l0 -4.8571 l-10.857 0 l0 4.8571 l10.857 0 z M122.00028571428571 11.428999999999998 l0 3.4286 l-9.7143 15.714 l0 9.4286 l-7.4286 0 l0 -9.4857 l-9.7143 -15.657 l0 -3.4286 l6.5714 0 l6.8571 11.657 l6.8571 -11.657 l6.5714 0 z M164.8572857142857 17.714 l-16.857 0 l0 4.8571 l14.571 0 l0 6.2857 l-14.571 0 l0 11.143 l-7.4286 0 l0 -24.286 l4.2857 -4.2857 l20 0 l0 6.2857 z M168.28571428571428 40 l0 -5.7143 l2.2857 0 l0 -17.143 l-2.2857 0 l0 -5.7143 l12 0 l0 5.7143 l-2.2857 0 l0 17.143 l2.2857 0 l0 5.7143 l-12 0 z M183.14285428571426 17.714 l0 -6.2857 l24.286 0 l0 6.2857 l-8.4571 0 l0 22.286 l-7.4286 0 l0 -22.286 l-8.4 0 z M228.85671428571428 11.428999999999998 l7.4286 0 l0 28.571 l-6.5714 0 l-11.143 -16 l0 16 l-7.4286 0 l0 -28.571 l6.5714 0 l11.143 15.886 l0 -15.886 z M266.28585714285714 17.714 l-16.857 0 l0 4.8571 l14.571 0 l0 6.2857 l-14.571 0 l0 4.8571 l16.857 0 l0 6.2857 l-20 0 l-4.2857 -4.2857 l0 -24.286 l24.286 0 l0 6.2857 z M289.9998571428571 17.714 l-10.571 0 l0 4.8571 l14 0 l4.2857 4.2857 l0 8.8571 l-4.2857 4.2857 l-17.143 0 l-4.2857 -4.2857 l0 -4.2857 l5.4286 0 l2.2857 2.2857 l10.571 0 l0 -4.8571 l-14 0 l-4.2857 -4.2857 l0 -8.8571 l4.2857 -4.2857 l17.143 0 l4.2857 4.2857 l0 4.2857 l-5.4286 0 z M321.4284285714285 17.714 l-10.571 0 l0 4.8571 l14 0 l4.2857 4.2857 l0 8.8571 l-4.2857 4.2857 l-17.143 0 l-4.2857 -4.2857 l0 -4.2857 l5.4286 0 l2.2857 2.2857 l10.571 0 l0 -4.8571 l-14 0 l-4.2857 -4.2857 l0 -8.8571 l4.2857 -4.2857 l17.143 0 l4.2857 4.2857 l0 4.2857 l-5.4286 0 z"/></g><g id="SvgjsG1039" featurekey="nameFeature-1" transform="matrix(1.0278953217478142,0,0,1.0278953217478142,106.0638168605041,44.253308847834525)" fill="#3f72af"><path d="M2.8571 40 l0 -28.571 l20.857 0 l4.2857 4.2857 l0 12 l-4.2857 4.2857 l-13.429 0 l0 8 l-7.4286 0 z M10.286 25.714 l10.286 0 l0 -8 l-10.286 0 l0 8 z M59.42814285714286 15.713999999999999 l0 10 l-4.2857 4.2857 l4.2857 6.5714 l0 3.4286 l-6.8571 0 l-5.9429 -9.7143 l-5.4857 0 l0 9.7143 l-7.4286 0 l0 -28.571 l21.429 0 z M52.00014285714286 24 l0 -6.2857 l-10.857 0 l0 6.2857 l10.857 0 z M85.99971428571428 11.428999999999998 l4.2857 4.2857 l0 20 l-4.2857 4.2857 l-16.571 0 l-4.2857 -4.2857 l0 -20 l4.2857 -4.2857 l16.571 0 z M82.85671428571429 33.7143 l0 -16 l-10.286 0 l0 16 l10.286 0 z M109.42885714285714 35.7143 l-4.2857 4.2857 l-10.571 0 l0 -6.2857 l7.4286 0 l0 -22.286 l7.4286 0 l0 24.286 z M139.42871428571428 17.714 l-16.857 0 l0 4.8571 l14.571 0 l0 6.2857 l-14.571 0 l0 4.8571 l16.857 0 l0 6.2857 l-20 0 l-4.2857 -4.2857 l0 -24.286 l24.286 0 l0 6.2857 z M161.71471428571428 17.714 l-9.1429 0 l0 16 l9.1429 0 l2.2857 -2.2857 l5.4286 0 l0 4.2857 l-4.2857 4.2857 l-15.714 0 l-4.2857 -4.2857 l0 -20 l4.2857 -4.2857 l15.714 0 l4.2857 4.2857 l0 4.2857 l-5.4286 0 z M173.14285428571426 17.714 l0 -6.2857 l24.286 0 l0 6.2857 l-8.4571 0 l0 22.286 l-7.4286 0 l0 -22.286 l-8.4 0 z"/></g></svg></h3>
+                                
+                                <h1 id="text07" class="style1">Ruby Fitness </h1>
+                                <p id="text14" class="style2">You want to get back in shape at your own pace and you don't know what exercises to follow to reach your goal? Let us help you!</p>
+                                <div id="list02" class="style1 list">
+                                    <ul>
+                                        <li><p>Flexible programs & sessions</p></li>
+                                        <li><p>Personal training recommendations</p></li>
+                                        <li><p>30-day money-back guarantee</p></li>
+                                    </ul>
+                                </div>
+                                <form id="form03" method="post" class="style1">
+                                    <div class="inner">
+                                        <div class="field"><input type="email" name="email" id="form03-email"
+                                                placeholder="E-mail" maxlength="128" required /></div>
+                                        <div class="field"><input type="text" name="comment" id="form03-comment"
+                                                placeholder="Comment" maxlength="128" /></div>
+                                        <div class="actions"><button type="submit"><svg>
+                                                    <use xlink:href="#icon-a37"></use>
+                                                </svg><span class="label">Subscribe</span></button></div>
+                                    </div><input type="hidden" name="id" value="form03" />
+                                </form>
+                            </div>
+                            <div>
+                                <div class="image">
+                                    <picture class="frame">
+                                        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" alt="Hero image"/>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="style1 container"> </div>
+                <div id="container01" class="container columns">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div>
+                                <h3 id="text18" class="style5">Workouts</h3>
+                                <p id="text04" class="style2">Our web application generates personalized fitness workouts to allow you to progress in an optimized way according to your needs.</p>
+                                <div class="image">
+                                    <picture class="frame">
+                                        <img src="https://images.unsplash.com/photo-1562771379-eafdca7a02f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Training image"/>
+                                    </picture>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 id="text19" class="style5">Flexibility</h3>
+                                <p id="text06" class="style2">Our training programs are designed to allow you to train anytime, anywhere, without depending on equipment.</p>
+                                <div class="image">
+                                    <picture class="frame">
+                                        <img src="https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Hero image"/>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="container14" class="style1 container default full">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <h3 id="text20" class="style4">Free trial (12 months)</h3>
+                            <h2 id="text01" class="style1">The perfect opportunity to try</h2>
+                            <p id="text21" class="style2">Not sure if you want to join Ruby Fitness yet, don't worry! We have a free one-year membership offer.<br> 
+                            You will have access to our web application but not all features will be available.</p>
+                            <ul id="buttons04" class="style1 buttons">
+                                <li>
+                                    <a href="#" class="button n01">
+                                        <svg> <use xlink:href="#icon-a37"></use> </svg>
+                                        <span class="label">Start my training</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr id="divider01">
+                            <h3 id="text08" class="style4">Premium Service</h3>
+                            <h2 id="text11" class="style1">$11/month</h2>
+                            <p id="text15" class="style2">Our Premium service is an all-in-one package that includes training videos and articles to help you reach your fitness goals. You will have access to several personalized tools to generate a workout tailored to your needs.</p>
+                            <ul id="buttons02" class="style1 buttons">
+                                <li>
+                                    <a href="#" class="button n01">
+                                        <svg><use xlink:href="#icon-a37"></use></svg>
+                                        <span class="label">Get Started</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div id="gallery01" class="style1 gallery">
+                                <div class="inner">
+                                    <ul>
+                                        <li>
+                                            <span class="thumbnail">
+                                                <span class="frame">
+                                                    <img src="https://images.unsplash.com/photo-1585473233369-14a97aa923df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1147&q=80" alt="Gallery" />
+                                                </span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="thumbnail">
+                                                <span class="frame">
+                                                    <img src="https://images.unsplash.com/photo-1616271049250-02a7697e99ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1013&q=80" alt="Gallery" />
+                                                </span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="thumbnail">
+                                                <span class="frame">
+                                                    <img src="https://images.unsplash.com/photo-1591504771094-a1ca4de142d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Gallery" />
+                                                </span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="thumbnail">
+                                                <span class="frame">
+                                                    <img src="https://images.unsplash.com/photo-1620188467120-5042ed1eb5da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Gallery" />
+                                                </span>
+                                            </span>
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="thumbnail">
+                                                <span class="frame deferred">
+                                                    <img src="https://images.unsplash.com/photo-1591258370814-01609b341790?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Gallery main" />
+                                                </span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="container18">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <ul id="icons01" class="style1 icons">
+                                <li>
+                                    <a class="n01" href="#"><svg><use xlink:href="#icon-910"></use></svg>
+                                        <span class="label">Instagram</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="n02" href="#"><svg><use xlink:href="#icon-905"></use></svg>
+                                        <span class="label">Twitter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="n03" href="#"><svg><use xlink:href="#icon-935"></use></svg>
+                                        <span class="label">Medium</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h2 id="text13" class="style1">Our contacts</h2>
+                            <p id="text10" class="style2">You want to share your experience with us?<br>
+                            Feel free to join us on our social media or by email using the button below.</p>
+                            <ul id="buttons03" class="style1 buttons">
+                                <li>
+                                    <a href="/contact" class="button n01"><svg><use xlink:href="#icon-90a"></use></svg>
+                                        <span class="label">
+                                            <span class="__cf_email__">Keep in touch!</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
