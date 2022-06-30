@@ -1,4 +1,4 @@
-Module admin
+module Admin
 class FormsController < ApplicationController
     def index
     end
